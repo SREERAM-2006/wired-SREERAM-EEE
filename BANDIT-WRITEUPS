@@ -111,4 +111,57 @@ The pattern of my write up will be as follows:
 
 
 *BANDIT LEVEL 17*
- 1.
+ 1.Learned a new command called ' diff ' which compares 2 files line by line and shows the differences
+ 2.Used the command ' diff passwords.old passwords.new ' for getting password for next level which is in password.new
+ 3.Password for Level 18 is : x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
+*BANDIT LEVEL 18*
+ 1.The password for the next level is stored in a file readme in the homedirectory.as mentioned in question it says ' ByeBye ' when trying to log into bandit18
+ 2.SO i passed the command ' cat readme ' directly to ssh command to bypass the issue.
+ 3.Password for Level 19 is : cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+
+*BANDIT LEVEL 19*
+ 1.To gain acces to next level , I used ' setuid ' binary in the home directory.Execused it without arguements to find out how to use it as mentioned in question.
+ 2.i)Used ' ./bandit20-do '  to use the setuid binary
+  ii)Used '  ./bandit20-do cat /etc/bandit_pass/bandit20  ' to get password for next level.
+ 3.Password for Level 20 is : 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+*BANDIT LEVEL 20*
+ 1.To solve this Level I opened two terminals. one to run setuid command and other to start a network daemon to which setuid will connect.
+ 2.i)In terminal 1 I used ' nc -lp 31337 < /etc/bandit_pass/bandit20 ' to connect to localhost on port that I specify.It reads a line of text from connection and compares 
+     it to password from previous level , If password is correct , it will give password for next level.
+  ii)In terminal 2 I used ' ./suconnect 31337 ' to connect and get password which will appear in terminal 1.
+ 3.Password for Level 21 is : EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+
+*BANDIT LEVEL 21*
+ 1.A program is running automatically at regular intervals from cron, the time-based job scheduler.
+ 2.i)Firt listed all files in /etc/cron.d/ using command ' ls -la /etc/cron.d/ '
+  ii)Used ' cat /etc/cron.d/cronjob_bandit22 ' to read the cronjob_bandit22.sh script executed by cron.
+
+
+
+
+
+Passwords For all level from 0-21 listed below :
+
+
+level 1→2  -- 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+level 2 →3 – MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+level 3 → 4 -- 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ 
+level 4 → 5 -- 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+level 5 → 6 – HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+level 6 → 7 – morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+level 7 → 8 – dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+level 8 → 9 – 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+level 9 → 10 – FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+level 10 → 11 -- dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+level 11→ 12 -- 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+level 12 → 13 -- FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+level 13 → 14 -- MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+level 14 → 15 – 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+level 15 → 16 -- kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+level 16 → 17 -- EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
+level 17 → 18 -- x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+level 18 → 19 -- cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+level 19 → 20 -- 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+level 20 → 21 – EeoULMCra2q0dSkYj561DX7s1CpBuOBt
