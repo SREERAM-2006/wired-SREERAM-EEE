@@ -135,7 +135,7 @@ The pattern of my write up will be as follows:
 
 *BANDIT LEVEL 21*
  1.A program is running automatically at regular intervals from cron, the time-based job scheduler.
- 2.i)Firt listed all files in /etc/cron.d/ using command ' ls -la /etc/cron.d/ '
+ 2.i)First listed all files in /etc/cron.d/ using command ' ls -la /etc/cron.d/ '
   ii)Used ' cat /etc/cron.d/cronjob_bandit22 ' to read the cronjob_bandit22.sh script executed by cron.
 
 
