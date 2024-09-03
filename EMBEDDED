@@ -20,4 +20,18 @@ IN this also we have to do same stuffs that done ve1l3d_str1ng5 thapt installing
 
 http_request:
 
-In this a hardware given we have to connect and connect the wifi named http_request and in properties cop the dns adress and paste it in the chrome.And we have to find related queries
+In this a hardware given we have to connect and connect the wifi named http_request and in properties cop the dns adress and paste it in the chrome.And we have to find related queries and 
+want to type what you need and you get the flag ( http://192.168.4.1/?command=flag )
+
+AT:
+
+Connected the Hardware given and installed the software related to this and started to give commands according to the hints given.
+1.AT: Test AT startup.
+2.AT+GMR: Check version information.
+3.AT+CWSTATE: Query the Wi-Fi state and Wi-Fi information
+4.AT+CWLAP: List available APs
+5.AT+CWJAP: Connect to an AP
+6.AT+CWQAP: Disconnect from an AP
+After giving all these commands I got the flags.
+
+
