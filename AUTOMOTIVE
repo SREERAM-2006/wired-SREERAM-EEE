@@ -4,4 +4,7 @@ In this task i have gone into this website https://wigle.net/ and signed in it.g
 
 gh0st_h0rs3:
 
-In this task
+In this  , I Found 'CAN ID' of Mustang S550 from online forum and extracted the CAN ID for rpm from it. Used it to search for matching CAN IDs in the given log file,
+Took the payload data of the matching IDs and converted it from hex to ASCII which gave the flag.
+
+
