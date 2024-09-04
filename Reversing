@@ -1,0 +1,7 @@
+Compound V:
+
+So tried the file command, it was an executable binary so just ran him and he requested a password. 
+Decompiled the executableBUTdid not understand what any line of code did1Compile, paste it into ChatGPT who also gave a solution to unlock(executable) Random characters 
+getting returned by your executable. Huh not knowing what to do, I tried base64 decode that but returned nothing. I returned it to
+ChatGPT which discovered that while specifying, XOR ing its 9 was a "decodeURL" function in the code. It then ran it and gave me a URL. 3. I clicked the URL and there it was a Picture of Billy'
+found zero Then looked at the page source and grabbed the flag.
