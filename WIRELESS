@@ -1,1 +1,11 @@
+what's_up_DoH:
+
+This task gave me a hint 'idk567' . Opened the attached file in wireshark software and searched
+the "idk567' in the find tool. found a file  that contain a link to idk567. And searched it in 
+google where  I fould a image of 'spongebob_squarepants'which is a flag for this task.
+
+Is_It_Secure_Tho??:
+
+Opened the pcap file in wireshark which is given in challenge . Sorted out the least secure file 
+which is http in find tool and searched inside the files one by one to get the Flag.
 
